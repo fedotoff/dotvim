@@ -9,6 +9,7 @@ call pathogen#helptags()
 "---------
 autocmd vimenter * NERDTree
 let NERDTreeIgnore=['\.pyc$']
+let NERDTreeShowHidden=1
 
 syntax on
 filetype plugin indent on
