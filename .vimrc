@@ -9,14 +9,20 @@ call pathogen#helptags()
 "---------
 autocmd vimenter * NERDTree
 let NERDTreeIgnore=['\.pyc$', '\.swp$']
-let NERDTreeShowHidden=1
+"let NERDTreeShowHidden=1
 
 "----------------
 " editor settings
 "----------------
 syntax on
 filetype plugin indent on
+set t_Co=256
+color wombat256mod
+set tabstop=4 
+set softtabstop=4
+set shiftwidth=4
 set background=dark
+set colorcolumn=79
 set mouse=a                " enable mouse
 set title                  " show file in titlebar
 set number                 " show line number
