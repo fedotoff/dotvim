@@ -22,7 +22,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set background=dark
-set colorcolumn=79
+set colorcolumn=80
 set mouse=a                " enable mouse
 set title                  " show file in titlebar
 set number                 " show line number
