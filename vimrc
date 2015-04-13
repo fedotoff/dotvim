@@ -18,6 +18,11 @@ let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_char = '┊'
 
+"-------------------
+" gitgutter settings
+"-------------------
+let g:gitgutter_sign_column_always = 1
+
 "----------------
 " editor settings
 "----------------
