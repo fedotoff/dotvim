@@ -11,6 +11,12 @@ autocmd vimenter * NERDTree
 let NERDTreeIgnore=['\.pyc$', '\.swp$']
 "let NERDTreeShowHidden=1
 
+"--------------------
+" indentLine settings
+"--------------------
+let g:indentLine_leadingSpaceEnabled=1
+let g:indentLine_char = '┊'
+
 "----------------
 " editor settings
 "----------------
