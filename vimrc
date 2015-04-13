@@ -28,6 +28,7 @@ let g:gitgutter_sign_column_always = 1
 "----------------
 syntax on
 filetype plugin indent on
+au BufNewFile,BufRead *.jinja2 set filetype=html
 set t_Co=256
 color wombat256mod
 set tabstop=4 
@@ -39,8 +40,8 @@ set mouse=a                " enable mouse
 set title                  " show file in titlebar
 set number                 " show line number
 set expandtab              " expand tab to space
-set list
-set listchars=eol:¶
+"set list
+"set listchars=eol:¶
 
 "-------------
 " Keys binding
