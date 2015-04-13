@@ -1,4 +1,4 @@
-"---------
+:"---------
 " pathogen
 "---------
 call pathogen#infect()
@@ -14,7 +14,8 @@ let NERDTreeIgnore=['\.pyc$', '\.swp$']
 "--------------------
 " indentLine settings
 "--------------------
-let g:indentLine_leadingSpaceEnabled=1
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_char = '┊'
 
 "----------------
@@ -33,6 +34,8 @@ set mouse=a                " enable mouse
 set title                  " show file in titlebar
 set number                 " show line number
 set expandtab              " expand tab to space
+set list
+set listchars=eol:¶
 
 "-------------
 " Keys binding
@@ -57,3 +60,8 @@ set expandtab              " expand tab to space
 :map <S-{> vi{
 :map <S-(> vi(
 :map <S-[> vi[
+" Switch between Vim window
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
