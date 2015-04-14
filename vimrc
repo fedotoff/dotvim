@@ -40,8 +40,10 @@ set mouse=a                " enable mouse
 set title                  " show file in titlebar
 set number                 " show line number
 set expandtab              " expand tab to space
+set cursorline
 "set list
 "set listchars=eol:¶
+"set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.pyc
 
 "-------------
 " Keys binding
@@ -66,6 +68,8 @@ set expandtab              " expand tab to space
 :map <S-{> vi{
 :map <S-(> vi(
 :map <S-[> vi[
+" NertTree binding
+silent! nmap <C-b> :NERDTreeToggle<CR>
 " Switch between Vim window
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
