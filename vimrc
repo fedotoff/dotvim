@@ -28,7 +28,11 @@ let g:gitgutter_sign_column_always = 1
 "----------------
 syntax on
 filetype plugin indent on
-au BufNewFile,BufRead *.jinja2 set filetype=html
+"----------------
+" Jinja2 settings
+" ---------------
+autocmd BufNewFile,BufRead *.jinja2 set filetype=html
+autocmd BufWritePre *.py :%s/\s\+$//e
 set t_Co=256
 color wombat256mod
 set tabstop=4 
@@ -75,3 +79,5 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+" BufExplorer binding
+nmap <silent> <C-l> :ToggleBufExplorer<CR>
