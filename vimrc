@@ -1,4 +1,4 @@
-:"---------
+"---------
 " pathogen
 "---------
 call pathogen#infect()
